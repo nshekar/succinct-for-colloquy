@@ -49,8 +49,8 @@ the top left of the Colloquy's main window and select the "Succinct" option.
 Or, to set Succinct as your default Colloquy style, choose the "Appearance
 Preferences..." option from that "Style" drop-down menu.
 
-You can customize Succinct's colors by visiting the "Appearance" tab in
-Colloquy's preferences and clicking the "Customize Style..." button.
+You can customize Succinct's colors and features by visiting the "Appearance"
+tab in Colloquy's preferences and clicking the "Customize Style..." button.
 
 
 Contributors
