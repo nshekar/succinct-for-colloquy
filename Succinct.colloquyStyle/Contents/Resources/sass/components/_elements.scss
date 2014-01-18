@@ -43,6 +43,8 @@
 %content {
   /* Force the content as wide as possible. */
   width: 100%;
+  white-space: normal;
+  word-wrap: break-word;
 }
 
 %timestamp {
