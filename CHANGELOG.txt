@@ -1,3 +1,8 @@
+Succinct 2.3, 2014-01-18
+------------------------
+- Bug fix: Do not let long links break the layout.
+- Bug fix: Do not let long text break the layout.
+
 Succinct 2.2, 2013-02-15
 ------------------------
 - Bug fix: Messages sometimes out of order in Colloquy 2.4.
