@@ -5,6 +5,7 @@ html {
   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, Tahoma, sans-serif;
   font-size: 81.25%;
   line-height: 1.5em;
+  background-color: white;
 }
 
 body {
@@ -23,6 +24,10 @@ img {
 
 a:link {
   color: #0033cc;
+  /* Don't let long links break the layout */
+  display: inline-block;
+  vertical-align: top;
+  max-width: 60em;
 }
 
 a:visited {
@@ -79,6 +84,7 @@ a:focus {
  */
 .message__sender, .event__sender {
   min-width: 120px;
+  max-width: 240px;
   border-right: 1px solid #dddddd;
   background-color: #efefef;
   font-weight: bold;
@@ -90,6 +96,8 @@ a:focus {
 .message__content, .event__content {
   /* Force the content as wide as possible. */
   width: 100%;
+  white-space: normal;
+  word-wrap: break-word;
 }
 
 .message__timestamp, .event__timestamp {
@@ -207,12 +215,14 @@ a:focus {
   left: 0;
   height: 100%;
   width: 100%;
+  z-index: 1;
   background-color: #4b4b4b;
   opacity: 0.7;
 }
 
 #modal__content, #modal__open, #modal__close {
   position: fixed;
+  z-index: 2;
   border: 1px solid #4b4b4b;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   background-color: white;
@@ -233,12 +243,16 @@ a:focus {
   padding: 0 5px;
   line-height: 23px;
   text-align: center;
+  cursor: pointer;
 }
 #modal__open a:link, #modal__close a:link,
 #modal__open a:visited,
 #modal__close a:visited {
   color: #4b4b4b;
   text-decoration: none;
+}
+#modal__open:hover, #modal__close:hover {
+  background-color: #ffffcc;
 }
 
 #modal__open {
