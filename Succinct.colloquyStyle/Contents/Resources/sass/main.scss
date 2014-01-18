@@ -3,11 +3,11 @@
 
 
 // Base rules
-@import "base";
+@import "base/html-elements";
 
 // Layout rules
-@import "layout";
+@import "layouts/table";
 
-// Module rules
-@import "modules";
-@import "debug";
+// Component rules
+@import "components/elements";
+@import "components/debug";
