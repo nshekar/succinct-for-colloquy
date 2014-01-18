@@ -17,12 +17,6 @@
 // Variables
 // =============================================================================
 
-//
-// Legacy IE support
-//
-$legacy-support-for-ie      : false;
-
-
 // The following font family declarations are based on the Microsoft core web
 // fonts which are common fonts available on most computer systems. The DejaVu
 // and Nimbus Sans fonts are commonly available on Linux systems where the MS
@@ -64,19 +58,3 @@ $bg-incoming                : #efefef;
 $bg-outgoing                : #ffffcc;
 $bg-highlight               : #d9e7fb;
 $bg-notice                  : #eeffee;
-
-
-// =============================================================================
-// Partials to be shared with all .scss files.
-// =============================================================================
-
-@import "compass/support";  // Add Compass' IE and vendor prefix support variables.
-@import "compass/css3";     // Use one CSS3 mixin instead of multiple vendor prefixes.
-
-
-// =============================================================================
-// Custom sass mixins
-// =============================================================================
-
-// Define the custom mixins for your project here.
-// http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#defining_a_mixin
