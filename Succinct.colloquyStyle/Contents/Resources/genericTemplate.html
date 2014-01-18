@@ -2,48 +2,72 @@
 <html lang="en">
 <head>
 <script type="text/javascript">
-	function scrollToBottom() {
-		document.body.scrollTop = document.body.offsetHeight;
-	}
+  function scrollToBottom() {
+    document.body.scrollTop = document.body.offsetHeight;
+  }
 </script>
 </head>
 <body>
 
-<section id="contents" class="table"></section>
-
-<div id="modal__open" class="debug"><a href="javascript:showModal();">Get Source</a></div>
+<div id="modal__open" class="debug"><a id="modal__open-link">Get Source</a></div>
 <div id="modal" class="debug">
-	<div id="modal__overlay"></div>
-	<div id="modal__content"></div>
-	<div id="modal__close"><a href="javascript:hideModal();">Close</a></div>
+  <div id="modal__overlay"></div>
+  <div id="modal__content"></div>
+  <div id="modal__close"><a id="modal__close-link">Close</a></div>
 </div>
 
 <script type="text/javascript">
-	contents     = document.getElementById('contents');
-	modal        = document.getElementById('modal');
-	modalContent = document.getElementById('modal__content');
-	modalOpen    = document.getElementById('modal__open');
+(function (window, document, undefined) {
 
-	function showModal() {
-		var source = contents.innerHTML;
-		modalContent.innerHTML = source
-			.replace(/\</g,             '&lt;')
-			.replace(/\&lt;div/g,       '<br />&lt;div')
-			.replace(/\&lt;\/div/g,     '<br />&lt;/div')
-			.replace(/\&lt;article/g,   '<br />&lt;article')
-			.replace(/\&lt;\/article/g, '<br />&lt;/article')
-			.replace(/\&lt;p/g,         '<br />&nbsp;&nbsp;&lt;p')
-			.replace(/\&lt;time/g,      '<br />&nbsp;&nbsp;&lt;time')
-			.replace(/^<br \/>/,        '');
-		modal.style.display = 'block';
-		modalOpen.style.visibility = 'hidden';
-	};
-	function hideModal() {
-		modal.style.display = 'none';
-		modalOpen.style.visibility = 'visible';
-	};
-	hideModal();
+  var contents;
+  var modal;
+  var modalContent;
+  var modalOpen;
+  var modalOpenLink;
+  var modalCloseLink;
+
+  function setup() {
+    contents        = document.getElementById('contents');
+    modal           = document.getElementById('modal');
+    modalContent    = document.getElementById('modal__content');
+    modalOpen       = document.getElementById('modal__open');
+
+    closeModal();
+
+    modalOpenLink   = document.getElementById('modal__open-link');
+    modalCloseLink  = document.getElementById('modal__close-link');
+
+    modalOpenLink.onclick   = showModal;
+    modalCloseLink.onclick  = closeModal;
+  }
+
+  function showModal() {
+    var source = contents.innerHTML;
+    modalContent.innerHTML = source
+      .replace(/\</g,             '&lt;')
+      .replace(/\&lt;div/g,       '<br />&lt;div')
+      .replace(/\&lt;\/div/g,     '<br />&lt;/div')
+      .replace(/\&lt;article/g,   '<br />&lt;article')
+      .replace(/\&lt;\/article/g, '<br />&lt;/article')
+      .replace(/\&lt;p/g,         '<br />&nbsp;&nbsp;&lt;p')
+      .replace(/\&lt;time/g,      '<br />&nbsp;&nbsp;&lt;time')
+      .replace(/^<br \/>/,        '');
+    modal.style.display = 'block';
+    modalOpen.style.visibility = 'hidden';
+  };
+  function closeModal() {
+    modal.style.display = 'none';
+    modalOpen.style.visibility = 'visible';
+  };
+
+  if (document.addEventListener) {
+    document.addEventListener('DOMContentLoaded', setup, false);
+  }
+
+})(this, this.document);
 </script>
+
+<section id="contents" class="table"></section>
 
 </body>
 </html>
