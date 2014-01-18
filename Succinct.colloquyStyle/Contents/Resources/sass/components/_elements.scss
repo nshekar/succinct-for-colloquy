@@ -32,6 +32,7 @@
  */
 %sender {
   min-width: 120px;
+  max-width: 240px;
   border-right: 1px solid $grey-border;
   background-color: $bg-incoming;
   font-weight: bold;
