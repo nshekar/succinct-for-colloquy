@@ -1,0 +1,387 @@
+/**
+ * Base HTML element rules
+ */
+html {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, Tahoma, sans-serif;
+  font-size: 81.25%;
+  line-height: 1.5em;
+  background-color: #002b36;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #839496; /* Text color */
+  background-color: #073642; /* Mark line */
+}
+
+img {
+  border: 0;
+  /* Golden ratio ~ 485/300 */
+  max-height: 300px;
+  max-width: 485px;
+}
+
+/* Default link thing? */
+a:link {
+  /* This makes all names the same color: */
+  color: #268bd2;
+  /* Don't let long links break the layout */
+  display: inline-block;
+  vertical-align: top;
+  max-width: 60em;
+}
+
+/* I added this in an attempt to get the member names */
+/* to appear differently than links when mentioned in */
+/* chat or in events. It turns them all green. It seems */
+/* to work. */
+.member {
+  /*color: #247E70;*/
+  color: #2aa198 !important;
+/}
+
+a:visited {
+  /* Doesn't seem to do anything at the moment */
+  color: #853385;
+  /*color: #853385;*/
+}
+
+a:hover,
+a:focus {
+  /*text-shadow: rgba(0, 0, 0, 0.3) 0 1px 1px;*/
+}
+
+/**
+ * Layout rules
+ */
+.table {
+  display: table;
+  width: 100%;
+}
+
+.table__row {
+  display: table-row;
+}
+
+.table__cell {
+  display: table-cell;
+}
+
+/**
+ * Elements
+ */
+.member:link, .member:visited {
+  text-decoration: none;
+}
+.member:hover, .member:focus {
+  text-decoration: underline;
+}
+
+.highlight {
+  font-weight: bold;
+  /* Highlight identifier color */
+  color: #2aa198;
+  /*color: #333333;*/
+}
+
+.hidden {
+  display: none;
+}
+
+.table {
+  /* Bottom outline of event */
+  border-bottom: 1px solid #073642; /* 657b83 */
+}
+
+/**
+ * Areas
+ */
+.message__sender, .event__sender {
+  min-width: 105px;
+  max-width: 220px;
+  /* Separator between names and test */
+  border-right: 1px solid #1D434C;
+  background-color: #073642;
+  font-weight: bold;
+  text-align: right;
+  /*text-shadow: white 1px 1px 0;*/
+  word-wrap: break-word;
+}
+
+.message__content, .event__content {
+  /* Force the content as wide as possible. */
+  width: 100%;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+.message__timestamp, .event__timestamp {
+  font-size: 0.75rem;
+  text-align: right;
+}
+
+/**
+ * Messages
+ */
+.message > * {
+  padding: 4px 10px;
+}
+
+/* Added these next 3 lines:; */
+.message--incoming {
+  background-color: #002b36;
+}
+/* end add */
+
+.message--highlight {
+  background-color: #424444; /* 001600 */
+  /*background-color: #d9e7fb;*/
+}
+
+.message--outgoing {
+  background-color: #002b36;
+}
+
+.message--notice {
+  background-color: #eeffee; /* Change this a bit */
+}
+
+.message__sender {
+  border-top: 1px solid transparent;
+}
+.message--outgoing .message__sender {
+  background-color: #002b36;
+  /*background-color: transparent;*/
+}
+.event + .message--outgoing .message__sender, .message--incoming + .message--outgoing .message__sender {
+  /* Top of own message */
+  border-top: 1px solid #073642;
+}
+
+/* Comment this out to have names in front of all messages */
+.message--consecutive .message__sender .member {
+  display: none;
+}
+
+.message__content {
+  /* Tops of message content */
+  border-top: 1px solid #073642; /* 657b83 */
+}
+
+.message__timestamp {
+  /* Top of timestamp */
+  border-top: 1px solid #073642; /* " " */
+  color: #839496; /* Timestamp color */
+}
+
+.message:first-child > * {
+  border-top: none;
+}
+
+/**
+ * Events
+ */
+.event {
+  color: #444444;
+  /* Background of events */
+  background-color: #1F1F00;
+  /*background-color: #DBDBFF;*/
+  font-size: 0.75rem;
+  line-height: 1.2rem;
+}
+
+/*.event a:link,*/
+.event a:visited {
+  color: #247E70;
+  /*color: #aaaaaa;*/
+}
+.event:hover, .event:hover a:visited, .event:hover .event__timestamp {
+  color: #839496;
+}
+.event > * {
+  padding: 4px 10px;
+}
+.event + .event > * {
+  padding: 0 10px;
+  position: relative;
+  /* Un-do first event's bottom padding. */
+  top: -4px;
+}
+.event + .event .event__sender {
+  top: 0;
+}
+
+.event__content {
+  font-style: italic;
+  word-wrap: break-word;
+  -khtml-line-break: after-white-space;
+  -khtml-nbsp-mode: space;
+}
+
+.message + .event .event__sender {
+  border-top: 1px solid transparent;
+}
+.message + .event .event__content,
+.message + .event .event__timestamp {
+  border-top: 1px solid #073642; /* 657b83 */
+}
+
+/**
+ * Inline images
+ */
+.image__url {
+  display: none;
+}
+
+/**
+ * Debug styling
+ */
+/* Hide debug tools for normal usage. */
+.debug {
+  display: none;
+}
+
+#modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background-color: #4b4b4b;
+  opacity: 0.7;
+}
+
+#modal__content, #modal__open, #modal__close {
+  position: fixed;
+  z-index: 2;
+  border: 1px solid #4b4b4b;
+  /*box-shadow: 8px 8px 8px #0000FF;*/
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  background-color: white;
+}
+
+#modal__content {
+  top: 20px;
+  bottom: 42.8px;
+  left: 20px;
+  right: 20px;
+  padding: 20px;
+  overflow: auto;
+}
+
+#modal__open, #modal__close {
+  height: 22.8px;
+  right: 20px;
+  padding: 0 5px;
+  line-height: 23px;
+  text-align: center;
+  cursor: pointer;
+}
+#modal__open a:link, #modal__close a:link,
+#modal__open a:visited,
+#modal__close a:visited {
+  color: #4b4b4b;
+  text-decoration: none;
+}
+#modal__open:hover, #modal__close:hover {
+  background-color: #ffffcc;
+}
+
+#modal__open {
+  bottom: 0;
+  border-bottom: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+#modal__close {
+  bottom: 19px;
+  border-top: 1px solid #efefef;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/* Nick Colours */
+
+.colorself, .colorself a {
+    color: #d33682 !important;
+}
+
+/* These are all the possible colors that other people */
+/* in the room could be, determined later by hashing the */
+/* host. */
+
+.color0, .color0  > * { color: #213240 !important; } /* 213240 */
+.color1, .color1  > * { color: #EC1559 !important; }
+.color2, .color2  > * { color: #FAF93C !important; }
+.color3, .color3  > * { color: #009900 !important; } /* #561420 */
+.color4, .color4  > * { color: #821122 !important; }
+.color5, .color5  > * { color: #5C85FF !important; } /* 333333 */
+.color6, .color6  > * { color: #D31D8C !important; }
+.color7, .color7  > * { color: #BCDD11 !important; }
+.color8, .color8  > * { color: #005381 !important; }
+.color9, .color9  > * { color: #0D813D !important; } /* Green */
+.color10, .color10   > * { color: #F7A700 !important; } /* Orange */
+.color11, .color11   > * { color: #9966FF !important; } /* #3F3F30 */
+.color12, .color12   > * { color: #0099CC !important; } /* #330000 */
+.color13, .color13   > * { color: #dc322f !important; }
+.color14, .color14   > * { color: #A31B00 !important; }
+.color15, .color15   > * { color: #C24400 !important; }
+.color16, .color16   > * { color: #DD6100 !important; }
+.color17, .color17   > * { color: #4B4C3C !important; } /* 4B4C3C */
+.color18, .color18   > * { color: #FFB2CC !important; } /* #57470C */
+.color19, .color19   > * { color: #2B6088 !important; } /* Blue */
+.color20, .color20   > * { color: #0A55A3 !important; } /* Blue */
+.color21, .color21   > * { color: #006EBA !important; } /* Blue */
+.color22, .color22   > * { color: #859900 !important; }
+.color23, .color23   > * { color: #FD1B15 !important; }
+.color24, .color24   > * { color: #FF6D06 !important; }
+.color25, .color25   > * { color: #3EA63B !important; } /* Green */
+.color26, .color26   > * { color: #4F4F4F !important; } /* 4F4F4F */
+.color27, .color27   > * { color: #96D377 !important; } /* Cool lime green */
+.color28, .color28   > * { color: #7BF53D !important; }
+.color29, .color29   > * { color: #991D5E !important; }
+.color30, .color30   > * { color: #C42616 !important; }
+.color31, .color31   > * { color: #5050C1 !important; } /* Nice purple */
+.color32, .color32   > * { color: #5088C1 !important; } /* Marine */
+.color33, .color33   > * { color: #561420 !important; }
+.color34, .color34   > * { color: #821122 !important; }
+.color35, .color35   > * { color: #333333 !important; } /* 333333 */
+.color36, .color36   > * { color: #EC1559 !important; }
+.color37, .color37   > * { color: #213240 !important; } /* 213240 */
+.color38, .color38   > * { color: #193D55 !important; }
+.color39, .color39   > * { color: #0D813D !important; }
+.color40, .color40   > * { color: #193D55 !important; }
+.color41, .color41   > * { color: #C0000B !important; }
+.color42, .color42   > * { color: #FF6800 !important; }
+.color43, .color43   > * { color: #662B2D !important; }
+.color44, .color44   > * { color: #B03C0D !important; }
+.color45, .color45   > * { color: #E7371A !important; }
+.color46, .color46   > * { color: #EAB239 !important; }
+.color47, .color47   > * { color: #193D55 !important; } /*maybe*/
+.color48, .color48   > * { color: #4D7086 !important; } /* Dark ice */
+.color49, .color49   > * { color: #2B877E !important; } /* Teal */
+.color50, .color50   > * { color: #8A8C81 !important; }
+.color51, .color51   > * { color: #5F8183 !important; }
+.color52, .color52   > * { color: #C6064F !important; }
+.color53, .color53   > * { color: #F93981 !important; }
+.color54, .color54   > * { color: #E7C51B !important; }
+.color55, .color55   > * { color: #8173B1 !important; } /* nice dark lavender */
+.color56, .color56   > * { color: #FFFFEB !important; }
+.color57, .color57   > * { color: #2A3B63 !important; }
+.color58, .color58   > * { color: #717C8C !important; }
+.color59, .color59   > * { color: #F56203 !important; }
+.color60, .color60   > * { color: #FF0000 !important; }
+.color61, .color61   > * { color: #D24B00 !important; }
+.color62, .color62   > * { color: #90620C !important; }
+.color63, .color63   > * { color: #225928 !important; }
+.color64, .color64   > * { color: #3D367D !important; }
+.color65, .color65   > * { color: #5D236E !important; }
+.color66, .color66   > * { color: #D12C8B !important; }
+.color67, .color67   > * { color: #991441 !important; }
+.color68, .color68   > * { color: #585858 !important; }
+.color69, .color69   > * { color: #678090 !important; }
+.color70, .color70   > * { color: #6F9DBE !important; }
+ > * 
