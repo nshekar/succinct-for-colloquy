@@ -1,3 +1,9 @@
+Three reasons to love Succinct
+-------------------------------
+
+1. Simple, clean design.
+2. Emphasizes what you need.
+3. De-emphasizes what you don’t.
 
 Changed the original Succinct theme with some color tweaks of my own, reducing contrast. Also
 added two variants, Solarized and Solarized Dark, based on http://ethanschoonover.com/solarized.
@@ -50,28 +56,13 @@ I used [this website](http://www.w3schools.com/tags/ref_colorpicker.asp) to pick
 
 ----------------
 
-Colloquy (<http://colloquy.info>) is a very nice IRC application for Mac OS X,
-but its included chat styles are in need of some serious design and usability
-work. Succinct is an add-on style that is designed to be the "missing style" for
-Colloquy and is inspired by 37signals's Campfire design, but re-purposed for IRC
-communication.
-
-
-Three reasons to love "Succinct" for Colloquy
----------------------------------------------
-
-1. Simple clean design.
-2. Emphasizes what you need.
-3. De-emphasizes what you don’t.
-
-
 Contributors
 ------------
 
 * Claudio Perez Gamayo <http://80kv.com>: Created first-draft design based on 37
   Signal's Campfire web application.
 * Joel Watson <https://github.com/watsonian>
-* Willa Riggins. <https://github.com/willasaywhat>
+* Willa Riggins <https://github.com/willasaywhat>
 
 Additional bugfixes, usability improvements, and design comments are welcome!
 Just use GitHub to fork and make pull requests.
