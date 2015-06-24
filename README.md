@@ -1,7 +1,7 @@
 
 Changed the default theme with some color tweaks of my own, reducing contrast. Also
 added two variants, Solarized and Solarized Dark, based on http://ethanschoonover.com/solarized.
-Nickname coloring comes courtesy of willasaywhat <https://github.com/willasaywhat>.
+Nickname coloring comes courtesy of [willasaywhat](https://github.com/willasaywhat).
 
 Default:
 
