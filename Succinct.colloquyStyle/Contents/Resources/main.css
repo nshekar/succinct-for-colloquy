@@ -37,7 +37,7 @@ a:link {
 /* chat or in events. It turns them all green. It seems */
 /* to work. */
 .member {
-  color: #247E70;
+  color: #247E70 !important;
 }
 
 a:visited {
