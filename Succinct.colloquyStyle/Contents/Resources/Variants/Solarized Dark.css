@@ -311,25 +311,25 @@ a:focus {
 /* These are all the possible colors that other people */
 /* in the channel could be, determined later by hashing the */
 /* host. */
-.color0, .color0  > * { color: #213240 !important; } /* 213240 */
+.color0, .color0  > * { color: #213240 !important; }
 .color1, .color1  > * { color: #EC1559 !important; }
 .color2, .color2  > * { color: #FAF93C !important; }
-.color3, .color3  > * { color: #009900 !important; } /* #561420 */
+.color3, .color3  > * { color: #009900 !important; }
 .color4, .color4  > * { color: #821122 !important; }
-.color5, .color5  > * { color: #5C85FF !important; } /* 333333 */
+.color5, .color5  > * { color: #5C85FF !important; }
 .color6, .color6  > * { color: #D31D8C !important; }
 .color7, .color7  > * { color: #BCDD11 !important; }
 .color8, .color8  > * { color: #005381 !important; }
 .color9, .color9  > * { color: #0D813D !important; } /* Green */
 .color10, .color10   > * { color: #F7A700 !important; } /* Orange */
-.color11, .color11   > * { color: #9966FF !important; } /* #3F3F30 */
-.color12, .color12   > * { color: #0099CC !important; } /* #330000 */
+.color11, .color11   > * { color: #9966FF !important; }
+.color12, .color12   > * { color: #0099CC !important; }
 .color13, .color13   > * { color: #dc322f !important; }
 .color14, .color14   > * { color: #A31B00 !important; }
 .color15, .color15   > * { color: #C24400 !important; }
 .color16, .color16   > * { color: #DD6100 !important; }
-.color17, .color17   > * { color: #4B4C3C !important; } /* 4B4C3C */
-.color18, .color18   > * { color: #FFB2CC !important; } /* #57470C */
+.color17, .color17   > * { color: #4B4C3C !important; }
+.color18, .color18   > * { color: #FFB2CC !important; }
 .color19, .color19   > * { color: #2B6088 !important; } /* Blue */
 .color20, .color20   > * { color: #0A55A3 !important; } /* Blue */
 .color21, .color21   > * { color: #006EBA !important; } /* Blue */
@@ -337,7 +337,7 @@ a:focus {
 .color23, .color23   > * { color: #FD1B15 !important; }
 .color24, .color24   > * { color: #FF6D06 !important; }
 .color25, .color25   > * { color: #3EA63B !important; } /* Green */
-.color26, .color26   > * { color: #4F4F4F !important; } /* 4F4F4F */
+.color26, .color26   > * { color: #4F4F4F !important; }
 .color27, .color27   > * { color: #96D377 !important; } /* Cool lime green */
 .color28, .color28   > * { color: #7BF53D !important; }
 .color29, .color29   > * { color: #991D5E !important; }
@@ -346,9 +346,9 @@ a:focus {
 .color32, .color32   > * { color: #5088C1 !important; } /* Marine */
 .color33, .color33   > * { color: #561420 !important; }
 .color34, .color34   > * { color: #821122 !important; }
-.color35, .color35   > * { color: #333333 !important; } /* 333333 */
+.color35, .color35   > * { color: #333333 !important; }
 .color36, .color36   > * { color: #EC1559 !important; }
-.color37, .color37   > * { color: #213240 !important; } /* 213240 */
+.color37, .color37   > * { color: #213240 !important; }
 .color38, .color38   > * { color: #193D55 !important; }
 .color39, .color39   > * { color: #0D813D !important; }
 .color40, .color40   > * { color: #193D55 !important; }
@@ -358,7 +358,7 @@ a:focus {
 .color44, .color44   > * { color: #B03C0D !important; }
 .color45, .color45   > * { color: #E7371A !important; }
 .color46, .color46   > * { color: #EAB239 !important; }
-.color47, .color47   > * { color: #193D55 !important; } /*maybe*/
+.color47, .color47   > * { color: #193D55 !important; } /* Maybe */
 .color48, .color48   > * { color: #4D7086 !important; } /* Dark ice */
 .color49, .color49   > * { color: #2B877E !important; } /* Teal */
 .color50, .color50   > * { color: #8A8C81 !important; }
@@ -366,7 +366,7 @@ a:focus {
 .color52, .color52   > * { color: #C6064F !important; }
 .color53, .color53   > * { color: #F93981 !important; }
 .color54, .color54   > * { color: #E7C51B !important; }
-.color55, .color55   > * { color: #8173B1 !important; } /* nice dark lavender */
+.color55, .color55   > * { color: #8173B1 !important; } /* Nice dark lavender */
 .color56, .color56   > * { color: #FFFFEB !important; }
 .color57, .color57   > * { color: #2A3B63 !important; }
 .color58, .color58   > * { color: #717C8C !important; }
