@@ -37,7 +37,7 @@ need them.
 3. Open an additional Finder window and, from the Finder's "Go" menu, select
    "Go to Folder..." . In the dialog pane that appears, enter:
      ```/Library/Application Support/Colloquy/Styles``` (If this fails, type ```/Library/Application Support``` and
-     create a folder called "Colloquy". Inside, that create one called "Styles.").
+     create a folder called "Colloquy". Inside, that create one called "Styles").
 4. Drag "Succinct.colloquyStyle" there.
 5. Type ```/reload styles``` into Colloquy. (If this fails, restart Colloquy).
 
@@ -51,7 +51,7 @@ beyond what Colloquy allows you to do in the preferences menu. Here are instruct
 the themes to your liking if you've already download them.
 
 1. Locate the file. (Open a Finder window and, from the "Go" menu, select "Go to Folder..."
-and enter: /Library/Application Support/Colloquy/Styles
+and enter: ```/Library/Application Support/Colloquy/Styles```
 2. Right click "Succinct.colloquyStyle" and select "Show Package Contents."
 3. Navigate to Contents -> Resources.
 4. To change colors in the default theme, edit Main.css. To change Solarized colors, double click
