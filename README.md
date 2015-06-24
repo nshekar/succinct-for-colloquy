@@ -36,9 +36,10 @@ exactly like me when I found the original. Steps to download:
 need them. 
 3. Open an additional Finder window and, from the Finder's "Go" menu, select
    "Go to Folder..." . In the dialog pane that appears, enter:
-     /Library/Application Support/Colloquy/Styles (If the Styles folder doesn't exist, create it).
+     /Library/Application Support/Colloquy/Styles (If this fails, type /Library/Application Support and
+     create a folder called "Colloquy". Inside, that create one called "Styles.").
 4. Drag "Succinct.colloquyStyle" there.
-
+5. Type ```/reload styles``` into Colloquy.
 Restart Colloquy or type "/reload styles" into Colloquy.
 
 Editing Instructions:
