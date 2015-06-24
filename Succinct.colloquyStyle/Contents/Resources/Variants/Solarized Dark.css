@@ -12,7 +12,7 @@ body {
   margin: 0;
   padding: 0;
   color: #839496; /* Text color */
-  background-color: #073642; /* Mark line */
+  background-color: #073642; /* Mark line background */
 }
 
 img {
@@ -24,7 +24,7 @@ img {
 
 /* Default link thing? */
 a:link {
-  /* This makes all names the same color: */
+  /* This makes all names in events the same color: */
   color: #268bd2;
   /* Don't let long links break the layout */
   display: inline-block;
@@ -80,9 +80,9 @@ a:focus {
 
 .highlight {
   font-weight: bold;
-  /* Highlight identifier color */
+  /* Highlight identifier color: the color of whatever */
+  /* word/nickname that you set as a highlight */
   color: #2aa198;
-  /*color: #333333;*/
 }
 
 .hidden {
@@ -91,7 +91,7 @@ a:focus {
 
 .table {
   /* Bottom outline of event */
-  border-bottom: 1px solid #073642; /* 657b83 */
+  border-bottom: 1px solid #073642;
 }
 
 /**
@@ -102,6 +102,7 @@ a:focus {
   max-width: 220px;
   /* Separator between names and test */
   border-right: 1px solid #1D434C;
+  
   background-color: #073642;
   font-weight: bold;
   text-align: right;
@@ -136,7 +137,6 @@ a:focus {
 
 .message--highlight {
   background-color: #424444; /* 001600 */
-  /*background-color: #d9e7fb;*/
 }
 
 .message--outgoing {
@@ -150,12 +150,13 @@ a:focus {
 .message__sender {
   border-top: 1px solid transparent;
 }
+
 .message--outgoing .message__sender {
   background-color: #002b36;
-  /*background-color: transparent;*/
 }
+
 .event + .message--outgoing .message__sender, .message--incoming + .message--outgoing .message__sender {
-  /* Top of own message */
+  /* Top outline of own message */
   border-top: 1px solid #073642;
 }
 
@@ -165,14 +166,16 @@ a:focus {
 }
 
 .message__content {
-  /* Tops of message content */
-  border-top: 1px solid #073642; /* 657b83 */
+  /* Top outlines of message content */
+  border-top: 1px solid #073642;
 }
 
 .message__timestamp {
   /* Top of timestamp */
-  border-top: 1px solid #073642; /* " " */
-  color: #839496; /* Timestamp color */
+  border-top: 1px solid #073642;
+  
+  /* Timestamp font color */
+  color: #839496;
 }
 
 .message:first-child > * {
@@ -186,7 +189,6 @@ a:focus {
   color: #444444;
   /* Background of events */
   background-color: #1F1F00;
-  /*background-color: #DBDBFF;*/
   font-size: 0.75rem;
   line-height: 1.2rem;
 }
@@ -194,7 +196,6 @@ a:focus {
 /*.event a:link,*/
 .event a:visited {
   color: #247E70;
-  /*color: #aaaaaa;*/
 }
 .event:hover, .event:hover a:visited, .event:hover .event__timestamp {
   color: #839496;
@@ -224,7 +225,7 @@ a:focus {
 }
 .message + .event .event__content,
 .message + .event .event__timestamp {
-  border-top: 1px solid #073642; /* 657b83 */
+  border-top: 1px solid #073642;
 }
 
 /**
