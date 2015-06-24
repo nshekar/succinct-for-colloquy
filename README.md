@@ -21,7 +21,7 @@ Download & Install Instructions:
 If you're finding this theme by google and don't really know what you're doing, you're
 exactly like me when I found the original. Steps to download:
 
-1. To the upper right, there's a button called "Download ZIP". Download and unzip it.
+1. [Download this file](https://github.com/TempSpas/succinct-for-colloquy/archive/master.zip) and unzip it.
 2. Move all the contents of the folder except "Succinct.colloquyStyle" to the trash. You don't
 need them. 
 3. Open an additional Finder window and, from the Finder's "Go" menu, select
@@ -29,7 +29,7 @@ need them.
      /Library/Application Support/Colloquy/Styles
 4. Drag "Succinct.colloquyStyle" there.
 
-Restart Colloquy or type /reload styles into Colloquy.
+Restart Colloquy or type "/reload styles" into Colloquy.
 
 Editing Instructions:
 ---------------------
