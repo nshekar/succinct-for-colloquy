@@ -13,6 +13,39 @@ Solarized Dark:
 
 ![Screenshot](Dark.png)
 
+Download & Install Instructions:
+--------------------------------
+
+If you're finding this theme by google and don't really know what you're doing, you're
+exactly like me when I found the original. Steps to download:
+
+1. To the upper right, there's a button called "Download ZIP". Download and unzip it.
+2. Move all the contents of the folder except "Succinct.colloquyStyle" to the trash. You don't
+need them. 
+3. Open an additional Finder window and, from the Finder's "Go" menu, select
+   "Go to Folder..." . In the dialog pane that appears, enter:
+     /Library/Application Support/Colloquy/Styles
+4. Drag "Succinct.colloquyStyle" there.
+
+Restart Colloquy or type /reload styles into Colloquy.
+
+Editing Instructions:
+---------------------
+
+Again, when I found the original theme, I wanted to change a lot of the features myself,
+beyond what Colloquy allows you to do in the preferences menu. Here are instructions to tweak
+the themes to your liking if you've already download them.
+
+1. Locate the file. (Open a Finder window and, from the "Go" menu, select "Go to Folder..."
+and enter: /Library/Application Support/Colloquy/Styles
+2. Right click "Succinct.colloquyStyle" and select "Show Package Contents."
+3. Navigate to Contents -> Resources.
+4. To change colors in the default theme, edit Main.css. To change Solarized colors, double click
+the folder labeled "Variants."
+5. The CSS files inside this folder are clearly labeled and ready to edit.
+
+I used [this website](http://www.w3schools.com/tags/ref_colorpicker.asp) to pick colors.
+
 ----------------
 
 Colloquy (<http://colloquy.info>) is a very nice IRC application for Mac OS X,
