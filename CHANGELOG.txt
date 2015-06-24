@@ -1,3 +1,13 @@
+Succinct 2.4, 2015-06-24
+------------------------
+- Added two themes, Solarized and Solarized Dark
+- Made many minor tweaks to the default theme, including:
+	- Lowered contrast between font and text
+	- Getting rid of odd shadows on some text
+	- Nicknames and links retain coloring in events
+- Added unique nickname coloring
+- Added descriptive comments for end user tweaking
+
 Succinct 2.3, 2014-01-18
 ------------------------
 - Bug fix: Do not let long links break the layout.
