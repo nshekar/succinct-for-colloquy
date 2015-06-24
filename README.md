@@ -21,7 +21,7 @@ Solarized Dark:
 ![Screenshot](Dark.png)
 
 Note: Because of the plethora of colors possible for nicknames, some may not look right
-on some of the themes. It's a work in progress, I'm still going through and changing them
+on certain themes. It's a work in progress, I'm still going through and changing them
 to fit each one just right.
 
 Download & Install Instructions:
