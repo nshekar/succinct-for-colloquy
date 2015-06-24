@@ -3,8 +3,13 @@ Changed the default theme with some color tweaks of my own, reducing contrast.
 
 Default:
 
+Solarized:
+
 ![Screenshot](Solarized.png)
 
+Solarized Dark:
+
+![Screenshot](Dark.png)
 
 ----------------
 
