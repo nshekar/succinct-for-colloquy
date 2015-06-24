@@ -310,7 +310,7 @@ a:focus {
 }
 
 /* These are all the possible colors that other people */
-/* in the room could be, determined later by hashing the */
+/* in the channel could be, determined later by hashing the */
 /* host. */
 
 .color0, .color0  > * { color: #213240 !important; } /* 213240 */
