@@ -12,7 +12,7 @@ body {
   margin: 0;
   padding: 0;
   color: #4b4b4b; /* Text color */
-  background-color: #E6E6E6; /* Mark line */
+  background-color: #E6E6E6; /* Mark line background */
 }
 
 img {
@@ -298,14 +298,16 @@ a:focus {
   border-bottom-right-radius: 5px;
 }
 
-/* Nick Colours */
-
+/* Color your own name will appear as */
 .colorself, .colorself a {
     color: #A90101 !important;
     /*color: #247E70;*/ /* Green */
   /*font-weight: bold;    */
 }
 
+/* These are all the possible colors that other people */
+/* in the channel could be, determined later by hashing the */
+/* host. */
 .color0, .color0  > * { color: #213240 !important; }
 .color1, .color1  > * { color: #EC1559 !important; }
 .color2, .color2  > * { color: #FAF93C !important; }
