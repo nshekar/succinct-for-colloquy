@@ -1,3 +1,13 @@
+
+Changed the default theme with some color tweaks of my own, reducing contrast.
+
+Default:
+
+![Screenshot](Solarized.png)
+
+
+----------------
+
 Colloquy (<http://colloquy.info>) is a very nice IRC application for Mac OS X,
 but its included chat styles are in need of some serious design and usability
 work. Succinct is an add-on style that is designed to be the "missing style" for
