@@ -7,7 +7,7 @@ Three reasons to love Succinct
 
 Changed the original Succinct theme with some color tweaks of my own, reducing contrast. Also
 added two variants, Solarized and Solarized Dark, based on http://ethanschoonover.com/solarized.
-Nickname coloring comes courtesy of [willasaywhat](https://github.com/willasaywhat).
+Unique nickname coloring comes courtesy of [willasaywhat](https://github.com/willasaywhat).
 
 Default:
 
