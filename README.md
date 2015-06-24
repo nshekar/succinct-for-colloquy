@@ -46,7 +46,7 @@ Variants of Succinct will now be a selectable theme in the Styles dropdown menu.
 Editing Instructions:
 ---------------------
 
-Again, when I found the original theme, I wanted to change a lot of the features myself,
+Again, when I found the original theme, I wanted to change a lot of the colors and appearance myself,
 beyond what Colloquy allows you to do in the preferences menu. Here are instructions to tweak
 the themes to your liking if you've already download them.
 
