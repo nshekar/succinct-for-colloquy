@@ -22,10 +22,9 @@ img {
   max-width: 485px;
 }
 
-/* Default link thing? */
 a:link {
   /* This makes all names the same color: */
-  /*color: #0033cc;*/
+  color: #0033cc;
   /* Don't let long links break the layout */
   display: inline-block;
   vertical-align: top;
@@ -80,7 +79,8 @@ a:focus {
 
 .highlight {
   font-weight: bold;
-  /* Highlight identifier color */
+  /* Highlight identifier color: the color of whatever */
+  /* word/nickname that you set as a highlight */
   color: #007A5C;
   /*color: #333333;*/
 }
@@ -90,6 +90,7 @@ a:focus {
 }
 
 .table {
+  /* Bottom outline of event */
   border-bottom: 1px solid #dddddd;
 }
 
@@ -99,7 +100,9 @@ a:focus {
 .message__sender, .event__sender {
   min-width: 105px;
   max-width: 220px;
+  /* Separator between names and text */
   border-right: 1px solid #dddddd;
+  
   /*background-color: #efefef;*/
   background-color: #E6E6E6;
   font-weight: bold;
@@ -135,7 +138,6 @@ a:focus {
 
 .message--highlight {
   background-color: #FFE9FF;
-  /*background-color: #d9e7fb;*/
 }
 
 .message--outgoing {
@@ -143,17 +145,20 @@ a:focus {
 }
 
 .message--notice {
+  /* Notice background (light green) */
   background-color: #eeffee;
 }
 
 .message__sender {
   border-top: 1px solid transparent;
 }
+
 .message--outgoing .message__sender {
   background-color: #EEEEEE;
   /*background-color: transparent;*/
 }
 .event + .message--outgoing .message__sender, .message--incoming + .message--outgoing .message__sender {
+  /* Top outline of own message */
   border-top: 1px solid #efefef;
 }
 
@@ -163,11 +168,15 @@ a:focus {
 }
 
 .message__content {
+  /* Top outlines of message content */
   border-top: 1px solid #dddddd;
 }
 
 .message__timestamp {
+  /* Top outline of timestamp */
   border-top: 1px solid #dddddd;
+
+  /* Timestamp font colot */
   color: #666666;
 }
 
@@ -180,9 +189,8 @@ a:focus {
  */
 .event {
   color: #aaaaaa;
-  /* Background of events */
+  /* Background of events (light blue) */
   background-color: #E0E0FF;
-  /*background-color: #DBDBFF;*/
   font-size: 0.75rem;
   line-height: 1.2rem;
 }
