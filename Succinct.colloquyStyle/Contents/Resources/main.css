@@ -308,7 +308,8 @@ a:focus {
 
 /* Color your own name will appear as */
 .colorself, .colorself a {
-    color: #A90101 !important;
+    color: #3399FF !important; /*Blue*/
+    /*color: #A90101 !important;*/ /*Red*/
     /*color: #247E70;*/ /* Green */
   /*font-weight: bold;    */
 }
