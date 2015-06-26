@@ -22,7 +22,7 @@ Solarized Dark:
 
 Note: Because of the plethora of colors possible for nicknames, some may not look right
 on certain themes. It's a work in progress, I'm still going through and changing them
-to fit each one just right.
+to fit each one just right. Check the Dark theme's CSS for labeled colors.
 
 Download & Install Instructions:
 --------------------------------
