@@ -305,6 +305,7 @@ a:focus {
 /* Nick Colours */
 
 .colorself, .colorself a {
+    /*color: #3399FF !important;*/ /*Blue*/
     color: #d33682 !important;
     /*color: #247E70;*/ /* Green */
 }
