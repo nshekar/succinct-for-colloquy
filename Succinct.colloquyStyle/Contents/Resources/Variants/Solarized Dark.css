@@ -152,6 +152,7 @@ a:focus {
 }
 
 .message--outgoing .message__sender {
+  /* Background of field containing your own nickname */
   background-color: #002b36;
 }
 
